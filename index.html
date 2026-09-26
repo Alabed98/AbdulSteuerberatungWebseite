@@ -36,7 +36,7 @@
   .wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
 
   /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(10,26,41,0.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  header{position:sticky;top:0;z-index:50;background:rgba(10,26,41,0.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;}
   .brand{display:flex;flex-direction:column;line-height:1.15;}
   .brand .firm{font-size:0.64rem;letter-spacing:0.16em;color:var(--gold-400);text-transform:uppercase;}
@@ -131,7 +131,8 @@
   @media (max-width:860px){
     nav ul{display:none;}
     .about-grid,.contact-grid{grid-template-columns:1fr;}
-    .hero{padding-top:56px;}
+    .hero{padding-top:64px;}
+    .hero-photo{margin-top:8px;}
     .hero-inner{display:flex;flex-direction:column;}
     .hero-photo{order:1;justify-self:unset;align-self:center;margin:0 auto 28px;max-width:240px;width:80%;}
     .hero-photo .frame{inset:12px -10px -10px 12px;}
@@ -195,7 +196,7 @@
       <span class="photo-tag">Adam Dawod</span>
     </div>
 
-    <div class="quick-contact">
+    <div class="quick-contact" style="margin-bottom: 30px;">
       <a href="tel:+4917647005993"><span class="qc-label">Mobil</span>+49 176 47 00 59 93</a>
       <a href="tel:+4922039957110"><span class="qc-label">Kanzlei</span>+49 2203 99 571-10</a>
       <a href="mailto:a.dawod@schuerholz-steuerberatung.de"><span class="qc-label">E-Mail</span>a.dawod@schuerholz&#8288;-steuerberatung.de</a>
